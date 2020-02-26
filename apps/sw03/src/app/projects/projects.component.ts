@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
+import { ProjectsService} from '@bb/core-data';
+
 @Component({
   selector: 'bb-projects',
   templateUrl: './projects.component.html',
@@ -7,7 +9,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ProjectsComponent implements OnInit {
 
-  constructor() { }
+  constructor(private projectsService: ProjectsService) { }
 
   ngOnInit(): void {
   }
